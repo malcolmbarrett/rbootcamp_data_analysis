@@ -1,0 +1,51 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+# USC Preventive Medicine R Bootcamp: Data Analysis
+
+This repository contains the materials for the first track of the Fall 2019 R Bootcamp, Data Analysis. We will meet Monday through Thursday in Soto 116 from 10am to 1pm. On Friday, we will have a joint code cafe with the track 2 group at 2 PM. This will be a time to work on a project, either one we provide or one you'd like to bring yourself (for instance, an analysis or report you'd like to do).
+
+In this workshop, we will cover the basics of reading, manipulating, and visualizing data using an ecosystem of tools known as the Tidyverse. We will also cover making reproducible reports with the powerful R Markdown system.
+
+**It is essential that you comnplete two tasks before we begin:**
+
+1. Read through the material in [00-intro/intro_r.pdf](00-intro/intro_r.pdf) and complete all the exercises
+2. Sign up for an account at https://rstudio.cloud
+
+# Schedule
+
+### *Monday, August 19, 10a-1p*
+
+ * Reading data with readr and haven 
+ * Data manipulation with dplyr
+
+### *Tuesday, August 20, 10a-1p*
+
+ * Data visualization with ggplot2
+
+### *Wednesday, August 21, 10a-1p*
+
+*Before class: Installation help*
+
+ * Project-oriented workflows
+ * Tidying data with tidyr 
+ * Modeling in R
+
+### *Thursday, August 22, 10a-12:30p*
+
+ * Dynamic documents with R Markdown 
+ * Fun with R Markdown 
+ * Whole game	
+
+### *Friday, August 23, 2p-5p*
+ * Code Cafe

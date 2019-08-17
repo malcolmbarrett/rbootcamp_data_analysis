@@ -69,9 +69,11 @@ ______ ___ _______ ___
   mutate(
     ______ = str_replace_all(name, "(.*, )|(\\..*)", ""),
     # match abbreviations and French titles to miss and mrs
-    title = case_when(title %in% c("Mlle", "Ms") ~ "Miss",
-                      title == "Mme" ~ "Mrs",
-                      TRUE ~ title),
+    title = case_when(
+      title %in% c("Mlle", "Ms") ~ "Miss",
+      title == "Mme" ~ "Mrs",
+      TRUE ~ title
+    ),
     # make title a factor
     title = factor(title)
   )
@@ -208,7 +210,7 @@ survived_model %>%
   _______(is.numeric, round, digits = 2)
 ```
 
-What's going on with this model? Something looks wrong. Try to fix it. Hint: when variables on the right hand side of the formula are highly correlated with each other (collinear), it can sometimes mess up the model fit. 
+What's going on with this model? Something looks wrong. Try to fix it. Hint: when variables on the right hand side of the formula are highly correlated with each other (collinear), it can sometimes mess up the model fit. This often shows itself through extremely high standard errors. 
 
 1. Save the new model as `survived_model2`
 2. Tidy the results and round the numeric variables.
@@ -267,12 +269,12 @@ To know the real impact of a single variable on survival, we would need to thoug
 
 Let's look at it from a different perspective: variable importance. In a linear model, variable importance is just the absolute value of the test statistic. The larger the value, the more important the variable to the model.
 
-First, we need to re-tidy `survival_model2` because we got rid of `statistic`. Then, we'll create the variable importance variable and plot it.
+First, we need to re-tidy `survived_model2` because we got rid of `statistic`. Then, we'll create the variable importance variable and plot it.
 
 1. Tidy the model
 2. Sort the data frame using the absolute value of `statistic`. 
 3. Create a new variable called `importance` that is defined by `abs(statistic)`
-4. Plot `importance` on the x-axis and `term` on the y-axis.
+4. Plot `term` on the x-axis and `importance` on the y-axis. (Notice that in the final plot we flipped the coordinates with `coord_flip()`, so actually it ends up the reverse of this!)
 
 ```{r}
 ## Variable importance (abs(statistic))

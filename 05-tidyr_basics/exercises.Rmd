@@ -37,7 +37,7 @@ Use `gather()` to reorganize `table4a` into three columns: **country**, **year**
 
 ## Your Turn 2
 
-1. Use `spread()` to reorganize `table2` into four columns: country**, **year**, **cases**, and **population**. 
+1. Use `spread()` to reorganize `table2` into four columns: **country**, **year**, **cases**, and **population**. 
 2. Create a new variable called `prevalence` that divides `cases` by `population` multiplied by 100000.
 3. Pass the data frame to a ggplot. Make a scatter plot with `year` on the x axis and `prevalence` on the y axis. Set the color aesthetic (`aes()`) to `country`. Use `size = 2` for the points. Add a line geom. 
 
@@ -53,7 +53,7 @@ table2 %>%
 
 ## Your Turn 3
 
-Gather the 5th through 60th columns of `who` into a key column: value column pair named **codes** and **n**. Then select just the `county`, `year`, `codes` and `n` variables.
+Gather the 5th through 60th columns of `who` into a key column: value column pair named **codes** and **n**. Then select just the `country`, `year`, `codes` and `n` variables.
 
 ```{r}
 who
@@ -73,11 +73,7 @@ cases <- tribble(
 separate(_______, _______, into = c("_______", "_______"))
 ```
 
-## Your Turn 5
-
-
-
-## Your Turn 6: Challenge!
+## Your Turn 5: Challenge!
 
 There are two CSV files in this folder containing SEER data in breast cancer incidence in white and black women. For both sets of data:
 

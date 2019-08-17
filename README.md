@@ -13,7 +13,9 @@ instance, an analysis or report you’d like to do).
 In this workshop, we will cover the basics of reading, manipulating, and
 visualizing data using an ecosystem of tools known as the Tidyverse. We
 will also cover making reproducible reports with the powerful R Markdown
-system.
+system. This course is influenced by the [Master the
+Tidyverse](https://github.com/rstudio/master-the-tidyverse) workshop
+offered by RStudio but focuses more on the needs of health researchers.
 
 **It is essential that you comnplete two tasks before we begin:**
 

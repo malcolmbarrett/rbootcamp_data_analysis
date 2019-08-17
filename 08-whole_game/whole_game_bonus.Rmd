@@ -5,10 +5,7 @@ output: html_document
 
 ## Bonus: Machine Learning
 
-R has excellent support for many other approaches to modeling. Two such packages are `rms`, focused on regression, and `caret`, focused on machine learning. If you're interested in machine learning, give this optional section a try. It may take a while to run, so try usi---
-title: "Modeling survival on the Titanic"
-output: html_document
----
+R has excellent support for many other approaches to modeling. Two such packages are `rms`, focused on regression, and `caret`, focused on machine learning. If you're interested in machine learning, give this optional section a try. It may take a while to run, so try using the `cache` chunk option to store computationally heavy chunks between knittings. (Be careful not to cache chunks that output plots; do those in separate chunks, otherwise the figure won't update in a predicatable manner.)
 
 ```{r setup, message=FALSE}
 library(tidyverse)

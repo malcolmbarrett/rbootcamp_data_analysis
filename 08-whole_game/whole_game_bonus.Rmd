@@ -3,14 +3,6 @@ title: "Modeling survival on the Titanic"
 output: html_document
 ---
 
-```{r setup, message=FALSE}
-library(tidyverse)
-library(haven)
-titanic <- read_dta("titanic3.dta")
-
-knitr::opts_chunk$set(echo = TRUE)
-```
-
 ## Bonus: Machine Learning
 
 R has excellent support for many other approaches to modeling. Two such packages are `rms`, focused on regression, and `caret`, focused on machine learning. If you're interested in machine learning, give this optional section a try. It may take a while to run, so try usi---
